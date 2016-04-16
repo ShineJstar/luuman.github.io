@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/02/WebFrontRule/</loc>
+    <lastmod>2016-04-13T03:09:33.834Z</lastmod>
+    <data>
+        <display>
+        <title>Web前端开发规范手册</title>
+        <pubTime>2016-04-02T06:11:20.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/02/HtmlRem/</loc>
+    <lastmod>2016-04-13T03:06:37.826Z</lastmod>
+    <data>
+        <display>
+        <title>Js-Rem的理解</title>
+        <pubTime>2016-04-02T06:11:20.000Z</pubTime>
+        
+        <tag>rem</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/02/Gulp/</loc>
+    <lastmod>2016-04-11T07:11:11.471Z</lastmod>
+    <data>
+        <display>
+        <title>Gulp前端自动化</title>
+        <pubTime>2016-04-02T06:11:20.000Z</pubTime>
+        
+        <tag>automation</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/02/InputSearch/</loc>
+    <lastmod>2016-04-11T07:08:01.760Z</lastmod>
+    <data>
+        <display>
+        <title>Input输入框的案例</title>
+        <pubTime>2016-04-02T06:11:20.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/02/OmniMarkupPreviewer/</loc>
+    <lastmod>2016-04-11T07:04:32.311Z</lastmod>
+    <data>
+        <display>
+        <title>OmniMarkupPreviewer</title>
+        <pubTime>2016-04-02T06:11:20.000Z</pubTime>
+        
+        <tag>sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="sublime" url="http://luuman.github.io/categories/sublime/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/27/Hexo-Theme/</loc>
+    <lastmod>2016-04-10T07:46:58.529Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo 主题：SPFK</title>
+        <pubTime>2015-12-27T10:29:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://luuman.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/27/Hexo-plug/</loc>
+    <lastmod>2016-04-10T07:46:57.555Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo插件安装</title>
+        <pubTime>2015-12-27T10:29:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://luuman.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/27/Hexo/</loc>
+    <lastmod>2016-04-10T07:46:56.565Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo的使用介绍</title>
+        <pubTime>2015-12-27T10:29:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://luuman.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/27/GitHub+Hexo/</loc>
+    <lastmod>2016-04-10T07:46:55.504Z</lastmod>
+    <data>
+        <display>
+        <title>使用GitHub搭建Hexo博客</title>
+        <pubTime>2015-12-27T10:29:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://luuman.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/27/HexoBug/</loc>
+    <lastmod>2016-04-10T07:46:53.931Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo bug</title>
+        <pubTime>2015-12-27T10:29:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://luuman.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/21/Sublimebest/</loc>
+    <lastmod>2016-04-09T13:24:39.484Z</lastmod>
+    <data>
+        <display>
+        <title>Sublime Text历练</title>
+        <pubTime>2015-12-21T10:29:20.000Z</pubTime>
+        
+        <tag>Sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tool" url="http://luuman.github.io/categories/Tool/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/28/Mobile-knowledge/</loc>
+    <lastmod>2016-04-09T13:22:57.809Z</lastmod>
+    <data>
+        <display>
+        <title>移动前端知识总结</title>
+        <pubTime>2016-01-28T06:11:20.000Z</pubTime>
+        
+        <tag>Mobile</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mobile" url="http://luuman.github.io/categories/Mobile/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/25/CssTips/</loc>
+    <lastmod>2016-03-22T03:45:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>CSS小技巧收藏</title>
+        <pubTime>2015-12-25T10:29:00.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/25/CSS/</loc>
+    <lastmod>2016-03-22T01:25:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>CSS学习计划</title>
+        <pubTime>2015-12-25T10:29:00.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/03/02/TextShow/</loc>
+    <lastmod>2016-03-03T14:24:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>BOOS信息展示与收缩</title>
+        <pubTime>2016-03-02T10:29:00.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/27/Ajax/</loc>
+    <lastmod>2016-02-28T14:53:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>Ajax学习计划</title>
+        <pubTime>2016-01-27T06:11:20.000Z</pubTime>
+        
+        <tag>Ajax</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ajax" url="http://luuman.github.io/categories/Ajax/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/02/28/MobileRotate/</loc>
+    <lastmod>2016-02-28T14:50:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>移动端横屏提示动画</title>
+        <pubTime>2016-02-28T10:29:00.000Z</pubTime>
+        
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/19/AjaxStatus/</loc>
+    <lastmod>2016-02-27T08:37:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>Ajax Status请求状态</title>
+        <pubTime>2016-01-19T05:58:41.000Z</pubTime>
+        
+        <tag>Ajax</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ajax" url="http://luuman.github.io/categories/Ajax/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/02/27/OOCSS/</loc>
+    <lastmod>2016-02-27T08:10:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>面向对象的CSS样式</title>
+        <pubTime>2016-02-27T06:11:20.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/19/Git/</loc>
+    <lastmod>2016-02-27T07:48:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>Git的使用技巧</title>
+        <pubTime>2016-01-19T06:11:20.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/02/27/Moblie-PC/</loc>
+    <lastmod>2016-02-27T07:46:28.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于移动端界面在PC端显示的实现</title>
+        <pubTime>2016-02-27T06:11:20.000Z</pubTime>
+        
+        <tag>Mobile</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mobile" url="http://luuman.github.io/categories/Mobile/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/13/HTMLbase/</loc>
+    <lastmod>2016-02-27T07:24:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTML结构零散</title>
+        <pubTime>2016-01-13T05:58:41.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/16/Front-map/</loc>
+    <lastmod>2016-02-24T14:08:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>【转】2015-2016前端知识体系</title>
+        <pubTime>2016-01-16T05:58:41.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/02/20/animation/</loc>
+    <lastmod>2016-02-21T10:47:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3动画探秘</title>
+        <pubTime>2016-02-20T10:29:00.000Z</pubTime>
+        
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/02/20/NodeJsWeb/</loc>
+    <lastmod>2016-02-21T08:36:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>Node.js实战 建立简单的Web服务器</title>
+        <pubTime>2016-02-20T10:29:00.000Z</pubTime>
+        
+        <tag>NodeJs</tag>
+         
+         
+           
+             
+              <breadCrumb title="NodeJs" url="http://luuman.github.io/categories/NodeJs/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/25/WebFront/</loc>
+    <lastmod>2016-02-19T08:13:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>web前端职业规划</title>
+        <pubTime>2015-12-25T10:29:00.000Z</pubTime>
+        
+        <tag>FrontPlan</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/15/Native-JS/</loc>
+    <lastmod>2016-02-12T14:59:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>原生JavaScript探索</title>
+        <pubTime>2016-01-15T05:58:41.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/19/JSTip/</loc>
+    <lastmod>2016-02-11T11:42:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>原生JS TitleTip</title>
+        <pubTime>2016-01-19T05:58:41.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/21/SublimePackage/</loc>
+    <lastmod>2016-01-31T13:15:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Sublime插件</title>
+        <pubTime>2015-12-21T10:29:10.000Z</pubTime>
+        
+        <tag>Sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tool" url="http://luuman.github.io/categories/Tool/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/25/WeixinC/</loc>
+    <lastmod>2016-01-31T12:32:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>微信Web开发工具</title>
+        <pubTime>2015-12-25T10:29:00.000Z</pubTime>
+        
+        <tag>微信</tag>
+         
+         
+           
+             
+              <breadCrumb title="微信" url="http://luuman.github.io/categories/%E5%BE%AE%E4%BF%A1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/26/win7Set/</loc>
+    <lastmod>2016-01-28T14:43:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>电脑优化相关</title>
+        <pubTime>2015-12-26T06:11:20.000Z</pubTime>
+        
+        <tag>window 7</tag>
+         
+         
+           
+             
+              <breadCrumb title="Skill" url="http://luuman.github.io/categories/Skill/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/24/markdown/</loc>
+    <lastmod>2016-01-28T07:55:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown使用指南</title>
+        <pubTime>2015-12-24T10:29:00.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tool" url="http://luuman.github.io/categories/Tool/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/01/20/chromeplug/</loc>
+    <lastmod>2016-01-26T14:55:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端Chrome插件</title>
+        <pubTime>2016-01-20T05:58:41.000Z</pubTime>
+        
+        <tag>Chrome</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/21/JQueryCDN/</loc>
+    <lastmod>2016-01-26T07:42:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>CDN公共库</title>
+        <pubTime>2015-12-21T10:29:10.000Z</pubTime>
+        
+        <tag>CDN</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/21/FrontEndGuide/</loc>
+    <lastmod>2016-01-22T07:15:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端资源导航</title>
+        <pubTime>2015-12-21T05:58:41.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/11/BusyFront/</loc>
+    <lastmod>2016-01-04T16:38:40.000Z</lastmod>
+    <data>
+        <display>
+        <title>Busy前端工作室</title>
+        <pubTime>2015-12-11T10:29:00.000Z</pubTime>
+        
+        <tag>Front end outline</tag>
+         
+         
+           
+             
+              <breadCrumb title="WebFront" url="http://luuman.github.io/categories/WebFront/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/25/media/</loc>
+    <lastmod>2016-01-04T15:44:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>响应式布局</title>
+        <pubTime>2015-12-25T10:29:00.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+</urlset>

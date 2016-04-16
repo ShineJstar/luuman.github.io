@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>OmniMarkupPreviewer | Luuman&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="OmniMarkupPreviewer：作为 Sublime Text 的一款强大插件，支持将标记语言渲染为 HTML 并在浏览器上实时预览，同时支持导出 HTML 源码文件。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OmniMarkupPreviewer">
+<meta property="og:url" content="http://luuman.github.io/2016/04/02/OmniMarkupPreviewer/index.html">
+<meta property="og:site_name" content="Luuman's Blog">
+<meta property="og:description" content="OmniMarkupPreviewer：作为 Sublime Text 的一款强大插件，支持将标记语言渲染为 HTML 并在浏览器上实时预览，同时支持导出 HTML 源码文件。">
+<meta property="og:updated_time" content="2016-04-11T07:04:32.311Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OmniMarkupPreviewer">
+<meta name="twitter:description" content="OmniMarkupPreviewer：作为 Sublime Text 的一款强大插件，支持将标记语言渲染为 HTML 并在浏览器上实时预览，同时支持导出 HTML 源码文件。">
+  
+    <link rel="alternative" href="/atom.xml" title="Luuman&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">世平阜康</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">因为有了危机感，所以会义无反顾。</p>
+        
+        
+            <form>
+                <input type="text" class="st-default-search-input search" id="search" placeholder=" Search...">
+            </form>
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/luuman" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/lishangmou" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="http: //twitter.com/luuman" title="twitter">twitter</a>
+                            
+                                <a class="fl facebook" target="_blank" href="/#" title="facebook">facebook</a>
+                            
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Ajax/" style="font-size: 13.33px;">Ajax</a> <a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/CSS/" style="font-size: 16.67px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 13.33px;">CSS3</a> <a href="/tags/Chrome/" style="font-size: 10px;">Chrome</a> <a href="/tags/Front-end-outline/" style="font-size: 10px;">Front end outline</a> <a href="/tags/FrontPlan/" style="font-size: 10px;">FrontPlan</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 16.67px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Mobile/" style="font-size: 13.33px;">Mobile</a> <a href="/tags/NodeJs/" style="font-size: 10px;">NodeJs</a> <a href="/tags/Sublime/" style="font-size: 13.33px;">Sublime</a> <a href="/tags/automation/" style="font-size: 10px;">automation</a> <a href="/tags/rem/" style="font-size: 10px;">rem</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/window-7/" style="font-size: 10px;">window 7</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://MOxFIVE.github.io/">MOxFIVE</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.vsay.cn/">DoubleV</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ccwebsite.com/">兮兮</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.dandyweng.com/">翁天信</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.plqblog.com/views/index.php">潘利强</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.hankin.cn/">hankin</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.waydrow.com/">waydrow</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">世平阜康</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">世平阜康</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">因为有了危机感，所以会义无反顾。</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/luuman" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/lishangmou" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="http: //twitter.com/luuman" title="twitter">twitter</a>
+                    
+                        <a class="facebook" target="_blank" href="/#" title="facebook">facebook</a>
+                    
+                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-OmniMarkupPreviewer" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/02/OmniMarkupPreviewer/" class="article-date">
+      <time datetime="2016-04-02T06:11:20.000Z" itemprop="datePublished">2016-04-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      OmniMarkupPreviewer
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/sublime/">sublime</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime/">sublime</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>　　<strong>OmniMarkupPreviewer：</strong>作为 Sublime Text 的一款强大插件，支持将标记语言渲染为 HTML 并在浏览器上实时预览，同时支持导出 HTML 源码文件。</p>
+<a id="more"></a>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><blockquote>
+<p>Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。 —— 来自维基百科</p>
+</blockquote>
+<h2 id="Sublime_Text_3"><a href="#Sublime_Text_3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h2><blockquote>
+<p>Sublime Text 作为近些年迅速崛起的后起之秀，凭借其精美的 UI 交互、完备的特色功能俘虏了一大批忠实用户。其风靡之势刺激了一些新老文本编辑器的重新思考和开发，开源实现 Lime Text Editor 无需多说，Github 主导的 Atom 以及号称下一代 Vim 编辑器的 neovim 都明确受到 Sublime Text 的影响。</p>
+</blockquote>
+<h2 id="OmniMarkupPreviewer"><a href="#OmniMarkupPreviewer" class="headerlink" title="OmniMarkupPreviewer"></a>OmniMarkupPreviewer</h2><blockquote>
+<p>作为 Sublime Text 的一款强大插件，支持将标记语言渲染为 HTML 并在浏览器上实时预览，同时支持导出 HTML 源码文件。</p>
+</blockquote>
+<h3 id="u8BE6_u7EC6_u8BBE_u7F6E"><a href="#u8BE6_u7EC6_u8BBE_u7F6E" class="headerlink" title="详细设置"></a>详细设置</h3><figure class="highlight dust" data-lang=" dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">$</span><span class="expression">&#123;<span class="variable">packages</span>&#125;</span><span class="xml"> 路径为 /Users/ashfinal/Library/Application Support/Sublime Text 3/Packages/</span><br><span class="line"></span><br><span class="line"></span><span class="expression">&#123;</span><br><span class="line">	<span class="string">"server_host"</span>: <span class="string">"192.168.1.100"</span>,</span><br><span class="line">	&lt;!<span class="variable">--</span> 开启预览服务的 <span class="variable">IP</span> 地址, 默认为 <span class="variable">localhost.</span> <span class="variable">--</span>&gt;</span><br><span class="line"></span><br><span class="line">	<span class="string">"browser_command"</span>: [<span class="string">"open"</span>, <span class="string">"-a"</span>, <span class="string">"Google Chrome"</span>, <span class="string">"&#123;url&#125;"</span>],</span><br><span class="line">	&lt;!<span class="variable">--</span> 你完全可以在 <span class="variable">Mac</span> 上编辑 <span class="variable">Markdown</span> 文档，而把 <span class="variable">iPad</span> 当作外接显示器来实时预览 <span class="variable">--</span>&gt;</span><br><span class="line">	/<span class="end-block">/ User public static files should be placed into</span></span><br><span class="line">	/<span class="end-block">/ </span>$&#123;<span class="variable">packages</span>&#125;</span><span class="xml">/User/OmniMarkupPreviewer/public/</span><br><span class="line">	// User templates should be placed into:</span><br><span class="line">	// $</span><span class="expression">&#123;<span class="variable">packages</span>&#125;</span><span class="xml">/User/OmniMarkupPreviewer/templates/</span><br><span class="line">	// Requires browser reload</span><br><span class="line"></span><br><span class="line">	"html_template_name": "Evolution Yellow",</span><br><span class="line">	// list of renderers to be ignored, case sensitive.</span><br><span class="line">	// Valid renderers are: "CreoleRenderer", "MarkdownRenderer", "PodRenderer",</span><br><span class="line">	// "RDocRenderer", "RstRenderer", "TextitleRenderer"</span><br><span class="line">	// for example, to disable Textile and Pod renderer:</span><br><span class="line">	// "ignored_renderers": ["TextitleRenderer", "PodRenderer"]</span><br><span class="line"></span><br><span class="line">	"ignored_renderers": ["CreoleRenderer", "PodRenderer", "RDocRenderer", "TextitleRenderer", "LiterateHaskellRenderer"],</span><br><span class="line"></span><br><span class="line">	"mathjax_enabled": false,</span><br><span class="line">	// MarkdownRenderer options</span><br><span class="line"></span><br><span class="line">	"renderer_options-MarkdownRenderer": </span><span class="expression">&#123;</span><br><span class="line">	/<span class="end-block">/ Valid extensions</span>:</span><br><span class="line">	/<span class="end-block">/ - OFFICIAL </span>(<span class="variable">Python</span> <span class="variable">Markdown</span>) <span class="variable">-</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"extra"</span>: <span class="variable">Combines</span> [<span class="string">"abbr"</span>, <span class="string">"attr_list"</span>, <span class="string">"def_list"</span>, <span class="string">"fenced_code"</span>, <span class="string">"footnotes"</span>, <span class="string">"tables"</span>, <span class="string">"smart_strong"</span>]</span><br><span class="line">	/<span class="end-block">/ For PHP Markdown Extra</span>(<span class="variable">http</span>:/<span class="end-block">/michelf.ca</span><span class="end-block">/projects</span><span class="end-block">/php-markdown</span><span class="end-block">/extra</span>/)</span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"abbr"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/abbreviations.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"attr_list"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/attr</span>_<span class="variable">list.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"def_list"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/definition</span>_<span class="variable">lists.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"fenced_code"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/fenced</span>_<span class="variable">code</span>_<span class="variable">blocks.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"footnotes"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/footnotes.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"tables"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/tables.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"smart_strong"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/smart</span>_<span class="variable">strong.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"codehilite"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/code</span>_<span class="variable">hilite.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"meta"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/meta</span>_<span class="variable">data.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"toc"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/toc.html</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"nl2br"</span>: <span class="variable">http</span>:/<span class="end-block">/packages.python.org</span><span class="end-block">/Markdown</span><span class="end-block">/extensions</span><span class="end-block">/nl</span>2<span class="variable">br.html</span></span><br><span class="line">	/<span class="end-block">/ - </span>3<span class="variable">RD</span> <span class="variable">PARTY</span> <span class="variable">-</span></span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"strikeout"</span>: <span class="variable">Strikeout</span> <span class="variable">extension</span> <span class="variable">syntax</span> <span class="variable">-</span> `<span class="variable">This</span> ~~<span class="variable">is</span> <span class="variable">deleted</span> <span class="variable">text.</span>~~`</span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"subscript"</span>: <span class="variable">Subscript</span> <span class="variable">extension</span> <span class="variable">syntax</span> <span class="variable">-</span> `<span class="variable">This</span> <span class="variable">is</span> <span class="variable">water</span>: <span class="variable">H</span>~2~<span class="variable">O</span>`</span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"superscript"</span>: <span class="variable">Superscript</span> <span class="variable">extension</span> <span class="variable">syntax</span> 0 `2^10^ = 1024`</span><br><span class="line">	/<span class="end-block">/ </span><span class="string">"smarty"</span> <span class="variable">or</span> <span class="string">"smartypants"</span>: <span class="variable">Python-Markdown</span> <span class="variable">extension</span> <span class="variable">using</span> <span class="variable">smartypants</span> <span class="variable">to</span> <span class="variable">emit</span></span><br><span class="line">	/<span class="end-block">/ typographically nicer </span>(<span class="string">"curly"</span>) <span class="variable">quotes</span>, <span class="variable">proper</span></span><br><span class="line">	/<span class="end-block">/ </span>(<span class="string">"em"</span> <span class="variable">and</span> <span class="string">"en"</span>) <span class="variable">dashes</span>, <span class="variable">etc.</span></span><br><span class="line">	/<span class="end-block">/ See</span>: <span class="variable">http</span>:/<span class="end-block">/daringfireball.net</span><span class="end-block">/projects</span><span class="end-block">/smartypants</span>/</span><br><span class="line">	/<span class="end-block">/ And</span>: <span class="variable">https</span>:/<span class="end-block">/github.com</span><span class="end-block">/waylan</span><span class="end-block">/Python-Markdown</span><span class="end-block">/blob</span><span class="end-block">/master</span><span class="end-block">/docs</span><span class="end-block">/extensions</span><span class="end-block">/smarty.txt</span></span><br><span class="line"></span><br><span class="line">	<span class="string">"extensions"</span>: [<span class="string">"extra"</span>, <span class="string">"codehilite"</span>, <span class="string">"toc"</span>, <span class="string">"strikeout"</span>, <span class="string">"smarty"</span>, <span class="string">"subscript"</span>, <span class="string">"superscript"</span>]</span><br><span class="line">&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<h3 id="u914D_u8272_u7F8E_u5316"><a href="#u914D_u8272_u7F8E_u5316" class="headerlink" title="配色美化"></a>配色美化</h3><p><a href="https://github.com/luuman/sublime-config/blob/master/OmniMarkupPreviewer/public/github.css" title="github.css" target="_blank" rel="external">github.css</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/04/02/OmniMarkupPreviewer/">OmniMarkupPreviewer</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 世平阜康 的个人博客">世平阜康</a></p>
+        <p><span>发布时间:</span>2016年04月02日 - 14时11分</p>
+        <p><span>最后更新:</span>2016年04月11日 - 15时04分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/02/OmniMarkupPreviewer/" title="OmniMarkupPreviewer">http://luuman.github.io/2016/04/02/OmniMarkupPreviewer/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://luuman.github.io/2016/04/02/OmniMarkupPreviewer/　　作者: 世平阜康" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2016/04/02/HtmlRem/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Js-Rem的理解
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/04/02/InputSearch/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Input输入框的案例</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown"><span class="toc-number">1.</span> <span class="toc-text">Markdown</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sublime_Text_3"><span class="toc-number">2.</span> <span class="toc-text">Sublime Text 3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OmniMarkupPreviewer"><span class="toc-number">3.</span> <span class="toc-text">OmniMarkupPreviewer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u8BE6_u7EC6_u8BBE_u7F6E"><span class="toc-number">3.1.</span> <span class="toc-text">详细设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u914D_u8272_u7F8E_u5316"><span class="toc-number">3.2.</span> <span class="toc-text">配色美化</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/04/02/OmniMarkupPreviewer/" data-title="OmniMarkupPreviewer" data-url="http://luuman.github.io/2016/04/02/OmniMarkupPreviewer/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"luuman"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/04/02/HtmlRem/" title="上一篇: Js-Rem的理解">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/04/02/InputSearch/" title="下一篇: Input输入框的案例">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/HtmlRem/">Js-Rem的理解</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/OmniMarkupPreviewer/">OmniMarkupPreviewer</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/InputSearch/">Input输入框的案例</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/WebFrontRule/">Web前端开发规范手册</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/Gulp/">Gulp前端自动化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/02/TextShow/">BOOS信息展示与收缩</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/MobileRotate/">移动端横屏提示动画</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/OOCSS/">面向对象的CSS样式</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/Moblie-PC/">关于移动端界面在PC端显示的实现</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/20/animation/">CSS3动画探秘</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/20/NodeJsWeb/">Node.js实战 建立简单的Web服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/28/Mobile-knowledge/">移动前端知识总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/27/Ajax/">Ajax学习计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/20/chromeplug/">前端Chrome插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/Git/">Git的使用技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/JSTip/">原生JS TitleTip</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/AjaxStatus/">Ajax Status请求状态</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/Front-map/">【转】2015-2016前端知识体系</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/15/Native-JS/">原生JavaScript探索</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/13/HTMLbase/">HTML结构零散</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/GitHub+Hexo/">使用GitHub搭建Hexo博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/HexoBug/">Hexo bug</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/Hexo/">Hexo的使用介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/Hexo-plug/">Hexo插件安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/Hexo-Theme/">Hexo 主题：SPFK</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/26/win7Set/">电脑优化相关</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/WebFront/">web前端职业规划</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/WeixinC/">微信Web开发工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/CSS/">CSS学习计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/media/">响应式布局</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/CssTips/">CSS小技巧收藏</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/24/markdown/">Markdown使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/Sublimebest/">Sublime Text历练</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/SublimePackage/">Sublime插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/JQueryCDN/">CDN公共库</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/FrontEndGuide/">前端资源导航</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/11/BusyFront/">Busy前端工作室</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 世平阜康
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?819b1c6493df653afb8c7846bc4b8db6";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+    <script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("search").onclick = function(){
+            console.log("search")
+            search();
+        }
+      }
+      function search(){
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+      }
+    </script>
+
+  </div>
+</body>
+</html>
