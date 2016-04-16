@@ -442,15 +442,6 @@ gulp.watch(&apos;./js/*.js&apos;, function(){
     <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u524D_u7AEF_u81EA_u52A8_u5316_u7684_u76EE_u7684"><span class="toc-number">1.</span> <span class="toc-text">前端自动化的目的</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u529F_u80FD_uFF1A"><span class="toc-number">1.1.</span> <span class="toc-text">功能：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u76EE_u524D_u6700_u77E5_u540D_u7684_u6784_u5EFA_u5DE5_u5177_uFF1A_Gulp_u3001Grunt_u3001NPM_+_Webpack_uFF1B"><span class="toc-number">1.2.</span> <span class="toc-text">目前最知名的构建工具： Gulp、Grunt、NPM + Webpack；</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5B89_u88C5_u524D_u51C6_u5907_uFF1A"><span class="toc-number">2.</span> <span class="toc-text">安装前准备：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u4E3A_u4E86_u786E_u4FDD_u4F9D_u8D56_u73AF_u5883_u6B63_u786E_uFF0C_u6211_u4EEC_u5148_u6267_u884C_u51E0_u4E2A_u7B80_u5355_u7684_u547D_u4EE4_u68C0_u67E5_u3002"><span class="toc-number">2.1.</span> <span class="toc-text">为了确保依赖环境正确，我们先执行几个简单的命令检查。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u63A5_u4E0B_u6765_u770B_u770Bnpm_uFF0C_u5B83_u662F_node__u7684_u5305_u7BA1_u7406_u5DE5_u5177_uFF0C_u53EF_u4EE5_u5229_u7528_u5B83_u5B89_u88C5_gulp__u6240_u9700_u7684_u5305"><span class="toc-number">2.2.</span> <span class="toc-text">接下来看看npm，它是 node 的包管理工具，可以利用它安装 gulp 所需的包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5F00_u59CB_u5168_u5C40_u5B89_u88C5Gulp"><span class="toc-number">2.3.</span> <span class="toc-text">开始全局安装Gulp</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u521B_u5EFA_u5DE5_u7A0B"><span class="toc-number">3.</span> <span class="toc-text">创建工程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u6F14_u793A_u9879_u76EE_u76EE_u5F55_u7ED3_u6784"><span class="toc-number">3.1.</span> <span class="toc-text">演示项目目录结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u521B_u5EFApackage-json"><span class="toc-number">3.2.</span> <span class="toc-text">创建package.json</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5B89_u88C5_u63D2_u4EF6_uFF0C_u52A0_u5230_u9879_u76EE_u4F9D_u8D56package-json_u4E2D"><span class="toc-number">3.3.</span> <span class="toc-text">安装插件，加到项目依赖package.json中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5B89_u88C5gulp_u529F_u80FD_u63D2_u4EF6_u4F9D_u8D56_u5305"><span class="toc-number">3.4.</span> <span class="toc-text">安装gulp功能插件依赖包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5F15_u5165_u63D2_u4EF6_u5305"><span class="toc-number">3.5.</span> <span class="toc-text">引入插件包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u7B80_u5355_u7684_u529F_u80FD_uFF1A"><span class="toc-number">3.6.</span> <span class="toc-text">简单的功能：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#gulp-jshint"><span class="toc-number">3.6.1.</span> <span class="toc-text">gulp-jshint</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u8865_u5145_uFF1A_u7684_u524D_u7AEF_u5F00_u53D1_u8F6F_u4EF6_u73AF_u5883"><span class="toc-number">3.7.</span> <span class="toc-text">补充：的前端开发软件环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u7F16_u8BD1_u4F1A_u663E_u793AFinished_2C_u5982_u679C_u4F60_u7684JS_u6709_u4EC0_u4E48_u4E0D_u597D_u7684_u5730_u65B9_u5B83_u4F1A_u63D0_u9192_uFF0C_u907F_u514D_u4E00_u4E9B_u4E0D_u5FC5_u8981_u7684_u9519_u8BEF_uFF0C_u5341_u5206_u8D34_u5FC3"><span class="toc-number">3.8.</span> <span class="toc-text">编译会显示Finished,如果你的JS有什么不好的地方它会提醒，避免一些不必要的错误，十分贴心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gulp_u7684_u63D2_u4EF6_u6570_u91CF_u5F88_u591A_uFF0C_u540E_u9762_u8FD8_u53EF_u4EE5_u6839_u636E_u81EA_u5DF1_u7684_u9700_u8981_u8FDB_u884C_u6DFB_u52A0_u4EFB_u52A1"><span class="toc-number">3.9.</span> <span class="toc-text">gulp的插件数量很多，后面还可以根据自己的需要进行添加任务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u524D_u7AEF_u81EA_u52A8_u5316_u7684_u76EE_u7684-1"><span class="toc-number">4.</span> <span class="toc-text">前端自动化的目的</span></a></li></ol>
 </div>
-<style>
-    .left-col .switch-btn {
-        display: none;
-    }
-    .left-col .switch-area {
-        display: none;
-    }
-</style>
-
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
 <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -461,23 +452,18 @@ gulp.watch(&apos;./js/*.js&apos;, function(){
     if ($(".left-col").is(":hidden")) {
         $("#tocButton").attr("value", valueShow);
     }
-
     $("#tocButton").click(function() {
         if ($("#toc").is(":hidden")) {
             $("#tocButton").attr("value", valueHide);
             $("#toc").slideDown(320);
-            $(".switch-btn, .switch-area").fadeOut(300);
         }
         else {
             $("#tocButton").attr("value", valueShow);
             $("#toc").slideUp(350);
-            $(".switch-btn, .switch-area").fadeIn(500);
         }
     })
-
     if ($(".toc").length < 1) {
         $("#toc, #tocButton").hide();
-        $(".switch-btn, .switch-area").show();
     }
 </script>
 
@@ -547,13 +533,11 @@ gulp.watch(&apos;./js/*.js&apos;, function(){
             if ($(".toc").length > 0) {
                 $("#toc, #tocButton").toggle(200, function() {
                     if ($(".switch-area").is(":visible")) {
-                        $("#toc, .switch-btn, .switch-area").toggle();
                         $("#tocButton").attr("value", valueHide);
                         }
                     })
             }
             else {
-                $(".switch-btn, .switch-area").fadeToggle(300);
             }
         })
     </script>

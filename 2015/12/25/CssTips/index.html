@@ -387,15 +387,6 @@ CSS代码：
 .media-wrap {    position: relative;    width: 100%;    height: 0;    padding-bottom: 56.25%;}.media-wrap iframe,.media-wrap embed,.media-wrap object {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}HTML代码：
 </span></a></li></ol></li></ol></li></ol></li></ol>
 </div>
-<style>
-    .left-col .switch-btn {
-        display: none;
-    }
-    .left-col .switch-area {
-        display: none;
-    }
-</style>
-
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
 <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -406,23 +397,18 @@ CSS代码：
     if ($(".left-col").is(":hidden")) {
         $("#tocButton").attr("value", valueShow);
     }
-
     $("#tocButton").click(function() {
         if ($("#toc").is(":hidden")) {
             $("#tocButton").attr("value", valueHide);
             $("#toc").slideDown(320);
-            $(".switch-btn, .switch-area").fadeOut(300);
         }
         else {
             $("#tocButton").attr("value", valueShow);
             $("#toc").slideUp(350);
-            $(".switch-btn, .switch-area").fadeIn(500);
         }
     })
-
     if ($(".toc").length < 1) {
         $("#toc, #tocButton").hide();
-        $(".switch-btn, .switch-area").show();
     }
 </script>
 
@@ -492,13 +478,11 @@ CSS代码：
             if ($(".toc").length > 0) {
                 $("#toc, #tocButton").toggle(200, function() {
                     if ($(".switch-area").is(":visible")) {
-                        $("#toc, .switch-btn, .switch-area").toggle();
                         $("#tocButton").attr("value", valueHide);
                         }
                     })
             }
             else {
-                $(".switch-btn, .switch-area").fadeToggle(300);
             }
         })
     </script>

@@ -488,15 +488,6 @@
     <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u540C_u6B65instagram_u56FE_u7247"><span class="toc-number">1.</span> <span class="toc-text">同步instagram图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5206_u4EAB_u6309_u94AE"><span class="toc-number">2.</span> <span class="toc-text">分享按钮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u767E_u5EA6_u7EDF_u8BA1"><span class="toc-number">3.</span> <span class="toc-text">百度统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4E0D_u849C_u5B50"><span class="toc-number">4.</span> <span class="toc-text">不蒜子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u7248_u6743_u58F0_u660E"><span class="toc-number">5.</span> <span class="toc-text">版权声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u793E_u4EA4_u8D26_u53F7_u56FE_u6807_u4FEE_u6539"><span class="toc-number">6.</span> <span class="toc-text">社交账号图标修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u7AD9_u5185_u641C_u7D22_u6846"><span class="toc-number">7.</span> <span class="toc-text">站内搜索框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u7AD9_u70B9Swiftype_u641C_u7D22_u6846"><span class="toc-number">8.</span> <span class="toc-text">站点Swiftype搜索框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RSS_u4E0D_u663E_u793A"><span class="toc-number">9.</span> <span class="toc-text">RSS不显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sitemap_u7F51_u7AD9_u5730_u56FE"><span class="toc-number">10.</span> <span class="toc-text">sitemap网站地图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u591A_u8BF4_u8BC4_u8BBA_u63D2_u4EF6"><span class="toc-number">11.</span> <span class="toc-text">多说评论插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4E3AHexo_u535A_u5BA2_u6DFB_u52A0_u76EE_u5F55"><span class="toc-number">12.</span> <span class="toc-text">为Hexo博客添加目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u63D2_u5165_u81EA_u5B9A_u4E49_u9875_u9762"><span class="toc-number">13.</span> <span class="toc-text">插入自定义页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u81EA_u5B9A_u4E49_u6302_u4EF6"><span class="toc-number">14.</span> <span class="toc-text">自定义挂件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u8BED_u6CD5_u9AD8_u4EAE"><span class="toc-number">15.</span> <span class="toc-text">Hexo语法高亮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u9996_u9875_u6DFB_u52A0loading_u6548_u679C"><span class="toc-number">16.</span> <span class="toc-text">首页添加loading效果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LoadingBar_u9875_u9762_u9876_u90E8_u52A0_u8F7D_u8FDB_u5EA6_u6761"><span class="toc-number">17.</span> <span class="toc-text">LoadingBar页面顶部加载进度条</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#highlight-js"><span class="toc-number">18.</span> <span class="toc-text">highlight.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u63D2_u4EF6"><span class="toc-number">19.</span> <span class="toc-text">Hexo插件</span></a></li></ol>
 </div>
-<style>
-    .left-col .switch-btn {
-        display: none;
-    }
-    .left-col .switch-area {
-        display: none;
-    }
-</style>
-
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
 <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -507,23 +498,18 @@
     if ($(".left-col").is(":hidden")) {
         $("#tocButton").attr("value", valueShow);
     }
-
     $("#tocButton").click(function() {
         if ($("#toc").is(":hidden")) {
             $("#tocButton").attr("value", valueHide);
             $("#toc").slideDown(320);
-            $(".switch-btn, .switch-area").fadeOut(300);
         }
         else {
             $("#tocButton").attr("value", valueShow);
             $("#toc").slideUp(350);
-            $(".switch-btn, .switch-area").fadeIn(500);
         }
     })
-
     if ($(".toc").length < 1) {
         $("#toc, #tocButton").hide();
-        $(".switch-btn, .switch-area").show();
     }
 </script>
 
@@ -593,13 +579,11 @@
             if ($(".toc").length > 0) {
                 $("#toc, #tocButton").toggle(200, function() {
                     if ($(".switch-area").is(":visible")) {
-                        $("#toc, .switch-btn, .switch-area").toggle();
                         $("#tocButton").attr("value", valueHide);
                         }
                     })
             }
             else {
-                $(".switch-btn, .switch-area").fadeToggle(300);
             }
         })
     </script>

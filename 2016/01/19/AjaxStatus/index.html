@@ -349,15 +349,6 @@
     <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1xx_-__u4FE1_u606F_u63D0_u793A"><span class="toc-number">1.</span> <span class="toc-text">1xx - 信息提示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2xx_-__u6210_u529F"><span class="toc-number">2.</span> <span class="toc-text">2xx - 成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3xx_-__u91CD_u5B9A_u5411"><span class="toc-number">3.</span> <span class="toc-text">3xx - 重定向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4xx_-__u5BA2_u6237_u7AEF_u9519_u8BEF"><span class="toc-number">4.</span> <span class="toc-text">4xx - 客户端错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5xx_-__u670D_u52A1_u5668_u9519_u8BEF"><span class="toc-number">5.</span> <span class="toc-text">5xx - 服务器错误</span></a></li></ol>
 </div>
-<style>
-    .left-col .switch-btn {
-        display: none;
-    }
-    .left-col .switch-area {
-        display: none;
-    }
-</style>
-
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
 <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -368,23 +359,18 @@
     if ($(".left-col").is(":hidden")) {
         $("#tocButton").attr("value", valueShow);
     }
-
     $("#tocButton").click(function() {
         if ($("#toc").is(":hidden")) {
             $("#tocButton").attr("value", valueHide);
             $("#toc").slideDown(320);
-            $(".switch-btn, .switch-area").fadeOut(300);
         }
         else {
             $("#tocButton").attr("value", valueShow);
             $("#toc").slideUp(350);
-            $(".switch-btn, .switch-area").fadeIn(500);
         }
     })
-
     if ($(".toc").length < 1) {
         $("#toc, #tocButton").hide();
-        $(".switch-btn, .switch-area").show();
     }
 </script>
 
@@ -454,13 +440,11 @@
             if ($(".toc").length > 0) {
                 $("#toc, #tocButton").toggle(200, function() {
                     if ($(".switch-area").is(":visible")) {
-                        $("#toc, .switch-btn, .switch-area").toggle();
                         $("#tocButton").attr("value", valueHide);
                         }
                     })
             }
             else {
-                $(".switch-btn, .switch-area").fadeToggle(300);
             }
         })
     </script>

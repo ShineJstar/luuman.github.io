@@ -353,15 +353,6 @@
     <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u5C55_u793A_u6548_u679C"><span class="toc-number">1.</span> <span class="toc-text">展示效果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u5F3A_u5236_u7AD6_u5C4F"><span class="toc-number">1.1.</span> <span class="toc-text">强制竖屏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML_u4EE3_u7801"><span class="toc-number">2.</span> <span class="toc-text">HTML代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS_u4EE3_u7801"><span class="toc-number">3.</span> <span class="toc-text">CSS代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5C4F_u5E55_u5224_u65AD"><span class="toc-number">4.</span> <span class="toc-text">屏幕判断</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u65B9_u6CD5_u4E00"><span class="toc-number">4.1.</span> <span class="toc-text">方法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u65B9_u6CD5_u4E8C"><span class="toc-number">4.2.</span> <span class="toc-text">方法二</span></a></li></ol></li></ol>
 </div>
-<style>
-    .left-col .switch-btn {
-        display: none;
-    }
-    .left-col .switch-area {
-        display: none;
-    }
-</style>
-
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
 <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -372,23 +363,18 @@
     if ($(".left-col").is(":hidden")) {
         $("#tocButton").attr("value", valueShow);
     }
-
     $("#tocButton").click(function() {
         if ($("#toc").is(":hidden")) {
             $("#tocButton").attr("value", valueHide);
             $("#toc").slideDown(320);
-            $(".switch-btn, .switch-area").fadeOut(300);
         }
         else {
             $("#tocButton").attr("value", valueShow);
             $("#toc").slideUp(350);
-            $(".switch-btn, .switch-area").fadeIn(500);
         }
     })
-
     if ($(".toc").length < 1) {
         $("#toc, #tocButton").hide();
-        $(".switch-btn, .switch-area").show();
     }
 </script>
 
@@ -458,13 +444,11 @@
             if ($(".toc").length > 0) {
                 $("#toc, #tocButton").toggle(200, function() {
                     if ($(".switch-area").is(":visible")) {
-                        $("#toc, .switch-btn, .switch-area").toggle();
                         $("#tocButton").attr("value", valueHide);
                         }
                     })
             }
             else {
-                $(".switch-btn, .switch-area").fadeToggle(300);
             }
         })
     </script>
