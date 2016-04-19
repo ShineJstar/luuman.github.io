@@ -4,6 +4,47 @@
 
     
   <url>
+    <loc>http://luuman.github.io/2016/04/19/overflowMore/</loc>
+    <lastmod>2016-04-19T03:14:35.590Z</lastmod>
+    <data>
+        <display>
+        <title>移动端设备显示限制，隐藏部分内容</title>
+        <pubTime>2016-04-19T06:11:20.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mobile" url="http://luuman.github.io/categories/Mobile/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/27/Hexo-Theme/</loc>
+    <lastmod>2016-04-19T02:37:52.309Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo 主题：SPFK</title>
+        <pubTime>2015-12-27T10:29:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://luuman.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://luuman.github.io/2016/04/02/WebFrontRule/</loc>
     <lastmod>2016-04-13T03:09:33.834Z</lastmod>
     <data>
@@ -97,26 +138,6 @@
            
              
               <breadCrumb title="sublime" url="http://luuman.github.io/categories/sublime/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://luuman.github.io/2015/12/27/Hexo-Theme/</loc>
-    <lastmod>2016-04-10T07:46:58.529Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo 主题：SPFK</title>
-        <pubTime>2015-12-27T10:29:00.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://luuman.github.io/categories/Hexo/"/>
           
         </display>
     </data>
@@ -242,7 +263,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://luuman.github.io/2015/12/25/CssTips/</loc>

@@ -353,8 +353,9 @@ a {
     padding-top: 10px;
     border: none;
   }
-  #container .article-more-link a {
-    float: right;
+  #container .article-more-link {
+    margin-top: 20px;
+    float: left;
   }
   #container #viewer-box .viewer-box-l {
     font-size: 14px;
@@ -368,9 +369,12 @@ a {
   }
   #container .article .article-title {
     font-size: 18px;
-    max-width: 65%;
+    padding-right: 96px;
     display: block;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   #container .article .article-meta {
     width: auto;
