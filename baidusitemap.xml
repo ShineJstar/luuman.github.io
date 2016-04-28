@@ -3,6 +3,66 @@
 
 
     
+  <url>
+    <loc>http://luuman.github.io/2016/04/19/overflowMore/</loc>
+    <lastmod>2016-04-26T12:28:46.761Z</lastmod>
+    <data>
+        <display>
+        <title>移动端设备显示限制，隐藏部分内容</title>
+        <pubTime>2016-04-19T06:11:20.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mobile" url="http://luuman.github.io/categories/Mobile/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/02/HtmlRem/</loc>
+    <lastmod>2016-04-21T09:15:17.131Z</lastmod>
+    <data>
+        <display>
+        <title>Js-Rem的理解</title>
+        <pubTime>2016-04-02T06:11:20.000Z</pubTime>
+        
+        <tag>rem</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2015/12/26/win7Set/</loc>
+    <lastmod>2016-04-21T08:32:42.023Z</lastmod>
+    <data>
+        <display>
+        <title>电脑优化相关</title>
+        <pubTime>2015-12-26T06:11:20.000Z</pubTime>
+        
+        <tag>window 7</tag>
+         
+         
+           
+             
+              <breadCrumb title="Skill" url="http://luuman.github.io/categories/Skill/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://luuman.github.io/2015/12/25/CSS/</loc>
@@ -18,26 +78,6 @@
            
              
               <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://luuman.github.io/2016/04/19/overflowMore/</loc>
-    <lastmod>2016-04-19T03:14:35.590Z</lastmod>
-    <data>
-        <display>
-        <title>移动端设备显示限制，隐藏部分内容</title>
-        <pubTime>2016-04-19T06:11:20.000Z</pubTime>
-        
-        <tag>CSS</tag>
-         
-         
-           
-             
-              <breadCrumb title="Mobile" url="http://luuman.github.io/categories/Mobile/"/>
           
         </display>
     </data>
@@ -74,26 +114,6 @@
         <pubTime>2016-04-02T06:11:20.000Z</pubTime>
         
         <tag>HTML</tag>
-         
-         
-           
-             
-              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://luuman.github.io/2016/04/02/HtmlRem/</loc>
-    <lastmod>2016-04-13T03:06:37.826Z</lastmod>
-    <data>
-        <display>
-        <title>Js-Rem的理解</title>
-        <pubTime>2016-04-02T06:11:20.000Z</pubTime>
-        
-        <tag>rem</tag>
          
          
            
@@ -619,26 +639,6 @@
            
              
               <breadCrumb title="微信" url="http://luuman.github.io/categories/%E5%BE%AE%E4%BF%A1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://luuman.github.io/2015/12/26/win7Set/</loc>
-    <lastmod>2016-01-28T14:43:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>电脑优化相关</title>
-        <pubTime>2015-12-26T06:11:20.000Z</pubTime>
-        
-        <tag>window 7</tag>
-         
-         
-           
-             
-              <breadCrumb title="Skill" url="http://luuman.github.io/categories/Skill/"/>
           
         </display>
     </data>
