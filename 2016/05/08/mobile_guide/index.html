@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>移动Web解决方案 | Luuman&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="最近在系统的学习移动的坑，这里将他整理起来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动Web解决方案">
+<meta property="og:url" content="http://luuman.github.io/2016/05/08/mobile_guide/index.html">
+<meta property="og:site_name" content="Luuman's Blog">
+<meta property="og:description" content="最近在系统的学习移动的坑，这里将他整理起来。">
+<meta property="og:updated_time" content="2016-05-09T08:13:51.767Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动Web解决方案">
+<meta name="twitter:description" content="最近在系统的学习移动的坑，这里将他整理起来。">
+  
+    <link rel="alternative" href="/atom.xml" title="Luuman&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">世平阜康</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">因为有了危机感，所以会义无反顾。</p>
+        
+        
+            <form>
+                <input type="text" class="st-default-search-input search" id="search" placeholder=" Search...">
+            </form>
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/luuman" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/lishangmou" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="http: //twitter.com/luuman" title="twitter">twitter</a>
+                            
+                                <a class="fl facebook" target="_blank" href="/#" title="facebook">facebook</a>
+                            
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Ajax/" style="font-size: 12.5px;">Ajax</a> <a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/CSS/" style="font-size: 17.5px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 12.5px;">CSS3</a> <a href="/tags/Chrome/" style="font-size: 10px;">Chrome</a> <a href="/tags/Front-end-outline/" style="font-size: 10px;">Front end outline</a> <a href="/tags/FrontPlan/" style="font-size: 10px;">FrontPlan</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/HTML/" style="font-size: 20px;">HTML</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Mobile/" style="font-size: 15px;">Mobile</a> <a href="/tags/NodeJs/" style="font-size: 10px;">NodeJs</a> <a href="/tags/Sublime/" style="font-size: 12.5px;">Sublime</a> <a href="/tags/automation/" style="font-size: 10px;">automation</a> <a href="/tags/rem/" style="font-size: 10px;">rem</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/window-7/" style="font-size: 10px;">window 7</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://MOxFIVE.github.io/">MOxFIVE</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.vsay.cn/">DoubleV</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ccwebsite.com/">兮兮</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.dandyweng.com/">翁天信</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.plqblog.com/views/index.php">潘利强</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.hankin.cn/">hankin</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.waydrow.com/">waydrow</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">世平阜康</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">世平阜康</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">因为有了危机感，所以会义无反顾。</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/luuman" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/lishangmou" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="http: //twitter.com/luuman" title="twitter">twitter</a>
+                    
+                        <a class="facebook" target="_blank" href="/#" title="facebook">facebook</a>
+                    
+                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-mobile_guide" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/08/mobile_guide/" class="article-date">
+      <time datetime="2016-05-08T06:11:20.000Z" itemprop="datePublished">2016-05-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      移动Web解决方案
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Mobile/">Mobile</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mobile/">Mobile</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>　　最近在系统的学习移动的坑，这里将他整理起来。<br><a id="more"></a></p>
+<h2 id="u524D_u6CBF"><a href="#u524D_u6CBF" class="headerlink" title="前沿"></a>前沿</h2><p>这里没有绝对的标准，只是介绍不同的解决方案，从而提高用户体验。</p>
+<h2 id="u7EC4_u4EF6_u5316"><a href="#u7EC4_u4EF6_u5316" class="headerlink" title="组件化"></a>组件化</h2><h3 id="u901A_u7528_u7EA6_u5B9A"><a href="#u901A_u7528_u7EA6_u5B9A" class="headerlink" title="通用约定"></a>通用约定</h3><h4 id="u5B57_u4F53_u4F7F_u7528_uFF1A_u4F7F_u7528_u65E0_u886C_u7EBF_u5B57_u4F53"><a href="#u5B57_u4F53_u4F7F_u7528_uFF1A_u4F7F_u7528_u65E0_u886C_u7EBF_u5B57_u4F53" class="headerlink" title="字体使用：使用无衬线字体"></a>字体使用：使用无衬线字体</h4><figure class="highlight css" data-lang=" css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">"Helvetica Neue"</span>, Helvetica, STHeiTi, sans-serif</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u7EC4_u4EF6_u547D_u540D"><a href="#u7EC4_u4EF6_u547D_u540D" class="headerlink" title="组件命名"></a>组件命名</h4><p>中fn,ui,text为保留字，除在指南中约定之外，建议不在其他场合进行使用，并且凡以此命名的类名，其中所有的数值的设定，皆为非important关键字【规范】</p>
+<figure class="highlight stylus" data-lang=" stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fn_clear 清除浮动</span><br><span class="line">fn_left,fn_right 左右浮动</span><br><span class="line">fn_show,fn_hide 显示 <span class="attribute">display</span>:block/隐藏 <span class="attribute">display</span>:<span class="attribute">none</span></span><br><span class="line">text_left,text_center,text_right 文字左中右居中</span><br></pre></td></tr></table></figure>
+<h5 id="u51E1_u88ABJS_u4F7F_u7528_u7684_u7C7B_u540D_uFF0C_u5728_u901A_u5E38_u547D_u540D_u524D_u52A0_u4E0AJ__u6216j-_u524D_u7F00_2C_u5728_u540C_u4E00_u4E2A_u9879_u76EE_u91CC_u9700_u8981_u4FDD_u6301_u5F62_u5F0F_u7684_u4E00_u81F4_u6027"><a href="#u51E1_u88ABJS_u4F7F_u7528_u7684_u7C7B_u540D_uFF0C_u5728_u901A_u5E38_u547D_u540D_u524D_u52A0_u4E0AJ__u6216j-_u524D_u7F00_2C_u5728_u540C_u4E00_u4E2A_u9879_u76EE_u91CC_u9700_u8981_u4FDD_u6301_u5F62_u5F0F_u7684_u4E00_u81F4_u6027" class="headerlink" title="凡被JS使用的类名，在通常命名前加上J_或j-前缀,在同一个项目里需要保持形式的一致性"></a>凡被JS使用的类名，在通常命名前加上J_或j-前缀,在同一个项目里需要保持形式的一致性</h5><h4 id="u7279_u5B9A_u6D4F_u89C8_u5668CSS_u5C5E_u6027_u7684_u524D_u7F00"><a href="#u7279_u5B9A_u6D4F_u89C8_u5668CSS_u5C5E_u6027_u7684_u524D_u7F00" class="headerlink" title="特定浏览器CSS属性的前缀"></a>特定浏览器CSS属性的前缀</h4><figure class="highlight mathematica" data-lang=" mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">采用以下两种，-webkit-和-ms-</span><br><span class="line"></span><br><span class="line">-webkit-<span class="list">&#123;prop&#125;</span>:<span class="list">&#123;value&#125;</span></span><br><span class="line">-ms-<span class="list">&#123;prop&#125;</span>:<span class="list">&#123;value&#125;</span></span><br><span class="line"><span class="list">&#123;prop&#125;</span>:<span class="list">&#123;value&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u901A_u7528_u4E1A_u52A1_u7EC4_u4EF6_u540D_u79F0_uFF0C_u5EFA_u8BAE_u4F7F_u7528_u5982_u4E0B_u7EA6_u5B9A_uFF1A"><a href="#u901A_u7528_u4E1A_u52A1_u7EC4_u4EF6_u540D_u79F0_uFF0C_u5EFA_u8BAE_u4F7F_u7528_u5982_u4E0B_u7EA6_u5B9A_uFF1A" class="headerlink" title="通用业务组件名称，建议使用如下约定："></a>通用业务组件名称，建议使用如下约定：</h4><figure class="highlight stylus" data-lang=" stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">button</span> btn 按钮</span><br><span class="line"><span class="tag">nav</span> 导航</span><br><span class="line">list 列表</span><br><span class="line">paging 分页</span><br><span class="line">tab 标签页</span><br><span class="line">select 下拉框</span><br><span class="line"><span class="tag">input</span> 输入框</span><br><span class="line">group 特性相似的群，与list的区别在于，list有明确的列表布局的特性，group没有其特性</span><br><span class="line"><span class="tag">form</span> 表单</span><br></pre></td></tr></table></figure>
+<h4 id="u5E38_u7528_u6A21_u5757_u72B6_u6001_u540D_u79F0"><a href="#u5E38_u7528_u6A21_u5757_u72B6_u6001_u540D_u79F0" class="headerlink" title="常用模块状态名称"></a>常用模块状态名称</h4><figure class="highlight armasm" data-lang=" armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">current</span>    当前模块状态</span><br><span class="line"><span class="keyword">selected </span>   被选中状态</span><br><span class="line"><span class="label">disabled</span>    失效状态</span><br><span class="line"><span class="label">focus</span>    焦点集中状态</span><br><span class="line"><span class="keyword">blur </span>   焦点失去状态</span><br><span class="line"><span class="label">checked</span>    被勾选状态</span><br><span class="line"><span class="label">success</span>    成功状态</span><br><span class="line"><span class="label">error</span>    错误状态</span><br><span class="line"></span><br><span class="line"><span class="label">hover</span> active    手指在模块上状态【讨论】</span><br></pre></td></tr></table></figure>
+<h3 id="u547D_u540D_u6307_u5357"><a href="#u547D_u540D_u6307_u5357" class="headerlink" title="命名指南"></a>命名指南</h3><h4 id="u7EC4_u4EF6_u547D_u540D_u662F_u660E_u6670_u7684_uFF0C_u4ECE_u62FC_u5199_u7684_u5355_u8BCD_u80FD_u76F4_u89C2_u7684_u770B_u51FA_u7EC4_u4EF6_u7528_u9014"><a href="#u7EC4_u4EF6_u547D_u540D_u662F_u660E_u6670_u7684_uFF0C_u4ECE_u62FC_u5199_u7684_u5355_u8BCD_u80FD_u76F4_u89C2_u7684_u770B_u51FA_u7EC4_u4EF6_u7528_u9014" class="headerlink" title="组件命名是明晰的，从拼写的单词能直观的看出组件用途"></a>组件命名是明晰的，从拼写的单词能直观的看出组件用途</h4><p>建议不使用缩写，除对字母长度超过6个以上的单词。如果使用缩写建议缩写后的单词在4个字母以上，<br>谨慎使用3个字母及以下的缩写，除非该含义非常清晰可见，并没有歧义，比如说btn，不建议的缩写，例如 ui<br>组件命名采用层次命名的方式，中间采用-为间隔符，层次方式如下</p>
+<p>[样式库名称] - [组件名称] (- [组件状态])? (- [子组件名称])? (- [子组件状态])?</p>
+<p>例如：<br>amui库中有个list列表，里面有个按钮，当用户点击list中当前被选中的那个item中的按钮的时候，<br>产生一个按上去的效果，这个时候的命名方式建议如下：am-list-current-btn-active</p>
+<p>样式库名称建议使用该样式库的名称简写，建议2~4个字母<br>样式库名称不建议使用宽泛且无具体意义的命名，比如说ui等【规范】<br>组件内部的类名需要体现上层的含义，体现的方式没有强行规定，但是可以直观看出</p>
+<p>例如：list表中嵌套一个按钮，</p>
+<h4 id="u72EC_u7ACB_u7CFB_u7EDF_u91CC_u7EDF_u4E00_u547D_u540D_u98CE_u683C_u3010_u89C4_u8303_u3011"><a href="#u72EC_u7ACB_u7CFB_u7EDF_u91CC_u7EDF_u4E00_u547D_u540D_u98CE_u683C_u3010_u89C4_u8303_u3011" class="headerlink" title="独立系统里统一命名风格【规范】"></a>独立系统里统一命名风格【规范】</h4><p>在一个完整的模块命名方式，对于相同类型的模块命名保持一致，比如说，使用了button作为模块类名之后，后面如果再需用到按钮，不再建议使用btn的方式。</p>
+<h2 id="u76EE_u5F55_u7ED3_u6784_u548C_u6587_u4EF6_u547D_u540D_u89C4_u8303"><a href="#u76EE_u5F55_u7ED3_u6784_u548C_u6587_u4EF6_u547D_u540D_u89C4_u8303" class="headerlink" title="目录结构和文件命名规范"></a>目录结构和文件命名规范</h2><p>前端有哪些大小写区分，XHTML区分大小写、HTML不区分大小写、CSS与HTML有关、Javascript区分大小写。由此可以看出，文件建议使用小写加下划线命名。</p>
+<p>我们单独一节来说明网站目录结构和命名规范的目的是让我们重视。因为无论你的XHTML、CSS、Javascript写得多熟练多好，而网站的目录结构和其命名是让人和搜索引擎读不懂的。<br>那么网站就没有真正做到标准化，而且整个网站的后期扩展和维护的成本和代价会很大。还有一点需重视就是xhmtl、css、js的代码注意缩进。<br>并保持格式整齐的并且提供注释，保证可阅性。同时为后期编写程序提供良好的开发条件。<br>首先网站的目录结构和文件命名清晰、XHTML里面的元素命名清晰会给SEO带来好处。例如文件的命名，如果使用全拼，那么Google是自动识别拼音进行排名的。关于SEO相关的知识(请参阅公司SEO相关文档)，就不在这里一一阐述了。接下来介绍目录结构和命名规范。</p>
+<h3 id="u76EE_u5F55_u7ED3_u6784"><a href="#u76EE_u5F55_u7ED3_u6784" class="headerlink" title="目录结构"></a>目录结构</h3><p>主要分为四类，需要注意的是，所有命名必须为小写英文、下划线，不能大写或中文。</p>
+<ol>
+<li><p>categorys(目录)<br>目录的命名尽可能使用英文或者全拼表达目录内的页面作用（语义化），需要注意的是不要使用中文词组简拼（eg:目录–&gt;ml）。<br>简拼容易出现重复、或者目录结构复杂的时候容易出现混乱，给后期维护带来很大的麻烦。</p>
+</li>
+<li><p>css目录命名可以为style、css、skin等，如果网站的目录结构不是很复杂的，尽量把css统一放在跟目录。<br>这样可以方便后期的维护操作。如果网站的目录结构很复杂，层次超过3层以上的，可以在对应的层设置目录页面结构的css。</p>
+</li>
+<li><p>js目录命名一般用js或scripts，这样一看就知道里面是放js脚本。同样js的目录结构也是和css一样。</p>
+</li>
+<li><p>images根据网站规模来调整放图片的目录，一般根目录设置的images是存放整站共用的图片（包括图片图标背景等），而各二级三级目录里面也可以设置相应的images目录存放当前级的图片。<br>根据具体的目录规范，做到前后台协商一致！当页面在引用css或者js的时候，大型的门户站点一般会在引用加上版本号或者日期。如：<br>这样的做法是为了维护的时候可以更清晰知道所引用的脚本或样式是什么时候什么版本的。</p>
+</li>
+</ol>
+<h3 id="html_u547D_u540D"><a href="#html_u547D_u540D" class="headerlink" title="html命名"></a>html命名</h3><p>html应遵循页面的内容或用途（SEO）进行命名。不能使用中文词组的简拼进行命名。当使用英文或者中文词组全拼的时候，同样会给SEO带来好处。另外需注意的是，整个网站的html后缀要统一，避免同时出现html、htm两种不同的后缀。</p>
+<h3 id="css_u547D_u540D_u53EF_u4EE5_u6309_u7167_u5185_u5BB9_u548C_u529F_u80FD_u8FDB_u884C_u547D_u540D_u3002"><a href="#css_u547D_u540D_u53EF_u4EE5_u6309_u7167_u5185_u5BB9_u548C_u529F_u80FD_u8FDB_u884C_u547D_u540D_u3002" class="headerlink" title="css命名可以按照内容和功能进行命名。"></a>css命名可以按照内容和功能进行命名。</h3><ol>
+<li><p>css功能性质一般指：reset.css（重置默认的样式-属性选择符）、global.css(全局使用的类选择符)、<br>common.css(部分页面可共同使用的类选择符)等各种按功能分类的css。一般还可以将连接、段落、颜色等样式分离出来。</p>
+</li>
+<li><p>布局页面一般指:style.css(全站的整体框架布局)—–index.css(首页的布局)、reg.css(注册页面的布局)。</p>
+</li>
+<li><p>样式命名采用小写英文字母、数字、中扛线的组合，其中不得包含汉字、空格和特殊字符；多个单词<br>应采用中扛线分割。</p>
+</li>
+<li><p>样式名称字符不要超过20个,少用拼音写样式，使用限定词诸如（R(ight),L(eft),T(op),B(ottom),M(iddle)，<br>要把限定词放在最后,后缀限定词建议采用缩写形式，从而减少名称长度；</p>
+</li>
+<li><p>根据样式的性质和功能，将样式分为以下几种：<br>reset.css（重置默认的样式-属性选择符）global.css(全局使用的类选择符) common.css等各种按功能分类的css，各个功能模块页面的样式，视具体情况添加或修改。</p>
+</li>
+</ol>
+<h3 id="js_u547D_u540D"><a href="#js_u547D_u540D" class="headerlink" title="js命名"></a>js命名</h3><p>js命名规范也和css的命名规范差不多，但是分前后台两种js文件，根据前后不用，使用不用的后缀区分。</p>
+<ol>
+<li><p>功能性质<br>js功能性质一般指:jquery.js(js库或框架)、global.js(全局使用的脚本)、common.js(部分页面需要用的脚本)</p>
+</li>
+<li><p>针对页面<br>针对某个目录的页面：js_toggle_reg.js,前面的js是为了统一所有针对页面而定出来的。可以根据个人的情况把js改成自己所定义的单词。</p>
+</li>
+<li>实际命名规范：<br>1、js库或框架文件，如jquery.js，就引用自身的命名。<br>2、与后台交互功能的js文件，命名规则就是:back_+js文件名如验证js：back<em>submitcheck.js3、前端页面效果的js文件，命名规则就是:front</em>+js文件名如焦点图效果js：front_focus.js</li>
+</ol>
+<h3 id="u56FE_u7247_u7684_u547D_u540D"><a href="#u56FE_u7247_u7684_u547D_u540D" class="headerlink" title="图片的命名"></a>图片的命名</h3><p>首先我们这里需要注意的是，切图的时候，可以去参考一些大型的网站如yahoo等的切图的方法。一般熟练css布局的都会将许多的小图标，背景图片集合到一张图，通过css来控制到具体的元素使用哪个图标或背景。另外目前国外和国内高标准的网站，一般都采用png图使用，但是我们公司根据异步的要求，必须用jpg的图片。图片根据图片的所处的页面位置名称作用来命名。图片的命名规范化更有利于css的编写。可以举几个例子:<br>index_header_navtab_bg.jpg—–字面理解到图片是index页面headher中导航TAB的背景products_content_title_icon.gif—–字面理解为products页面content中标题的iconindex_header_banner_pic.png—–字面理解为index页面header的banner图片<br>只有当图片的名称语义化了，在你写css或者页面需用到图片的时候，可以更快速的找到所需的。如果只是随便的取01.jpg、bg.jpg这类的命名，会给前端开发带来不便，更不用说后期维护了。<br>友情提示：本文中关于《WEB前端开发规范》给出的范例仅供您参考拓展思维使用，WEB前端开发规范：该篇文章建议您自主创作。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/05/08/mobile_guide/">移动Web解决方案</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 世平阜康 的个人博客">世平阜康</a></p>
+        <p><span>发布时间:</span>2016年05月08日 - 14时11分</p>
+        <p><span>最后更新:</span>2016年05月09日 - 16时13分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/08/mobile_guide/" title="移动Web解决方案">http://luuman.github.io/2016/05/08/mobile_guide/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://luuman.github.io/2016/05/08/mobile_guide/　　作者: 世平阜康" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/19/overflowMore/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">移动端设备显示限制，隐藏部分内容</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u524D_u6CBF"><span class="toc-number">1.</span> <span class="toc-text">前沿</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u7EC4_u4EF6_u5316"><span class="toc-number">2.</span> <span class="toc-text">组件化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u901A_u7528_u7EA6_u5B9A"><span class="toc-number">2.1.</span> <span class="toc-text">通用约定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#u5B57_u4F53_u4F7F_u7528_uFF1A_u4F7F_u7528_u65E0_u886C_u7EBF_u5B57_u4F53"><span class="toc-number">2.1.1.</span> <span class="toc-text">字体使用：使用无衬线字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u7EC4_u4EF6_u547D_u540D"><span class="toc-number">2.1.2.</span> <span class="toc-text">组件命名</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#u51E1_u88ABJS_u4F7F_u7528_u7684_u7C7B_u540D_uFF0C_u5728_u901A_u5E38_u547D_u540D_u524D_u52A0_u4E0AJ__u6216j-_u524D_u7F00_2C_u5728_u540C_u4E00_u4E2A_u9879_u76EE_u91CC_u9700_u8981_u4FDD_u6301_u5F62_u5F0F_u7684_u4E00_u81F4_u6027"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">凡被JS使用的类名，在通常命名前加上J_或j-前缀,在同一个项目里需要保持形式的一致性</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u7279_u5B9A_u6D4F_u89C8_u5668CSS_u5C5E_u6027_u7684_u524D_u7F00"><span class="toc-number">2.1.3.</span> <span class="toc-text">特定浏览器CSS属性的前缀</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u901A_u7528_u4E1A_u52A1_u7EC4_u4EF6_u540D_u79F0_uFF0C_u5EFA_u8BAE_u4F7F_u7528_u5982_u4E0B_u7EA6_u5B9A_uFF1A"><span class="toc-number">2.1.4.</span> <span class="toc-text">通用业务组件名称，建议使用如下约定：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u5E38_u7528_u6A21_u5757_u72B6_u6001_u540D_u79F0"><span class="toc-number">2.1.5.</span> <span class="toc-text">常用模块状态名称</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u547D_u540D_u6307_u5357"><span class="toc-number">2.2.</span> <span class="toc-text">命名指南</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#u7EC4_u4EF6_u547D_u540D_u662F_u660E_u6670_u7684_uFF0C_u4ECE_u62FC_u5199_u7684_u5355_u8BCD_u80FD_u76F4_u89C2_u7684_u770B_u51FA_u7EC4_u4EF6_u7528_u9014"><span class="toc-number">2.2.1.</span> <span class="toc-text">组件命名是明晰的，从拼写的单词能直观的看出组件用途</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#u72EC_u7ACB_u7CFB_u7EDF_u91CC_u7EDF_u4E00_u547D_u540D_u98CE_u683C_u3010_u89C4_u8303_u3011"><span class="toc-number">2.2.2.</span> <span class="toc-text">独立系统里统一命名风格【规范】</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u76EE_u5F55_u7ED3_u6784_u548C_u6587_u4EF6_u547D_u540D_u89C4_u8303"><span class="toc-number">3.</span> <span class="toc-text">目录结构和文件命名规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u76EE_u5F55_u7ED3_u6784"><span class="toc-number">3.1.</span> <span class="toc-text">目录结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#html_u547D_u540D"><span class="toc-number">3.2.</span> <span class="toc-text">html命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css_u547D_u540D_u53EF_u4EE5_u6309_u7167_u5185_u5BB9_u548C_u529F_u80FD_u8FDB_u884C_u547D_u540D_u3002"><span class="toc-number">3.3.</span> <span class="toc-text">css命名可以按照内容和功能进行命名。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js_u547D_u540D"><span class="toc-number">3.4.</span> <span class="toc-text">js命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u56FE_u7247_u7684_u547D_u540D"><span class="toc-number">3.5.</span> <span class="toc-text">图片的命名</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/05/08/mobile_guide/" data-title="移动Web解决方案" data-url="http://luuman.github.io/2016/05/08/mobile_guide/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"luuman"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/04/19/overflowMore/" title="下一篇: 移动端设备显示限制，隐藏部分内容">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/08/mobile_guide/">移动Web解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/19/overflowMore/">移动端设备显示限制，隐藏部分内容</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/WebFrontRule/">Web前端开发规范手册</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/Gulp/">Gulp前端自动化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/HtmlRem/">移动H5自适应布局</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/InputSearch/">Input输入框的案例</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/02/OmniMarkupPreviewer/">OmniMarkupPreviewer</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/02/TextShow/">BOOS信息展示与收缩</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/MobileRotate/">移动端横屏提示动画</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/OOCSS/">面向对象的CSS样式</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/Moblie-PC/">关于移动端界面在PC端显示的实现</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/20/NodeJsWeb/">Node.js实战 建立简单的Web服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/20/animation/">CSS3动画探秘</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/28/Mobile-knowledge/">移动前端知识总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/27/Ajax/">Ajax学习计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/20/chromeplug/">前端Chrome插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/Git/">Git的使用技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/JSTip/">原生JS TitleTip</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/AjaxStatus/">Ajax Status请求状态</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/Front-map/">【转】2015-2016前端知识体系</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/15/Native-JS/">原生JavaScript探索</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/13/HTMLbase/">HTML结构零散</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/GitHub+Hexo/">使用GitHub搭建Hexo博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/HexoBug/">Hexo bug</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/Hexo/">Hexo的使用介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/Hexo-plug/">Hexo插件安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/Hexo-Theme/">Hexo 主题：SPFK</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/26/win7Set/">电脑优化相关</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/WebFront/">web前端职业规划</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/CSS/">CSS学习计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/WeixinC/">微信Web开发工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/CssTips/">CSS小技巧收藏</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/media/">响应式布局</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/24/markdown/">Markdown使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/Sublimebest/">Sublime Text历练</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/JQueryCDN/">CDN公共库</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/SublimePackage/">Sublime插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/FrontEndGuide/">前端资源导航</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/11/BusyFront/">Busy前端工作室</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 世平阜康
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?819b1c6493df653afb8c7846bc4b8db6";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+    <script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("search").onclick = function(){
+            console.log("search")
+            search();
+        }
+      }
+      function search(){
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+      }
+    </script>
+
+  </div>
+</body>
+</html>

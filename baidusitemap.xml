@@ -4,14 +4,14 @@
 
     
   <url>
-    <loc>http://luuman.github.io/2016/04/19/overflowMore/</loc>
-    <lastmod>2016-04-26T12:28:46.761Z</lastmod>
+    <loc>http://luuman.github.io/2016/05/08/mobile_guide/</loc>
+    <lastmod>2016-05-09T08:13:51.767Z</lastmod>
     <data>
         <display>
-        <title>移动端设备显示限制，隐藏部分内容</title>
-        <pubTime>2016-04-19T06:11:20.000Z</pubTime>
+        <title>移动Web解决方案</title>
+        <pubTime>2016-05-08T06:11:20.000Z</pubTime>
         
-        <tag>CSS</tag>
+        <tag>Mobile</tag>
          
          
            
@@ -24,11 +24,31 @@
 
     
   <url>
-    <loc>http://luuman.github.io/2016/04/02/HtmlRem/</loc>
-    <lastmod>2016-04-21T09:15:17.131Z</lastmod>
+    <loc>http://luuman.github.io/2016/02/28/MobileRotate/</loc>
+    <lastmod>2016-05-09T03:40:18.641Z</lastmod>
     <data>
         <display>
-        <title>Js-Rem的理解</title>
+        <title>移动端横屏提示动画</title>
+        <pubTime>2016-02-28T10:29:00.000Z</pubTime>
+        
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/02/HtmlRem/</loc>
+    <lastmod>2016-05-03T01:15:44.989Z</lastmod>
+    <data>
+        <display>
+        <title>移动H5自适应布局</title>
         <pubTime>2016-04-02T06:11:20.000Z</pubTime>
         
         <tag>rem</tag>
@@ -37,6 +57,26 @@
            
              
               <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://luuman.github.io/2016/04/19/overflowMore/</loc>
+    <lastmod>2016-05-01T08:39:28.785Z</lastmod>
+    <data>
+        <display>
+        <title>移动端设备显示限制，隐藏部分内容</title>
+        <pubTime>2016-04-19T06:11:20.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mobile" url="http://luuman.github.io/categories/Mobile/"/>
           
         </display>
     </data>
@@ -359,26 +399,6 @@
            
              
               <breadCrumb title="Ajax" url="http://luuman.github.io/categories/Ajax/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://luuman.github.io/2016/02/28/MobileRotate/</loc>
-    <lastmod>2016-02-28T14:50:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>移动端横屏提示动画</title>
-        <pubTime>2016-02-28T10:29:00.000Z</pubTime>
-        
-        <tag>CSS3</tag>
-         
-         
-           
-             
-              <breadCrumb title="HTML" url="http://luuman.github.io/categories/HTML/"/>
           
         </display>
     </data>
