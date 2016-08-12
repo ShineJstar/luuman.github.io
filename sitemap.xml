@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://luuman.github.io/2016/01/19/Git/</loc>
+    <lastmod>2016-07-08T01:29:14.319Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://luuman.github.io/tags/index.html</loc>
+    <lastmod>2016-07-04T10:05:41.628Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://luuman.github.io/2016/05/08/mobile_guide/</loc>
     <lastmod>2016-05-24T07:45:46.583Z</lastmod>
   </url>
@@ -119,11 +129,6 @@
   <url>
     <loc>http://luuman.github.io/2016/02/27/OOCSS/</loc>
     <lastmod>2016-02-27T08:10:02.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://luuman.github.io/2016/01/19/Git/</loc>
-    <lastmod>2016-02-27T07:48:20.000Z</lastmod>
   </url>
   
   <url>
